@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+h1, h2 {
+    color: #000;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+a {
+    color: tomato;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.cookie-banner, .cookie-config-modal {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+.cookie-actions, .modal-actions {
+    margin-top: 20px;
+}
+.cookie-actions button, .modal-actions button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+}
+.cookie-actions button:hover, .modal-actions button:hover {
+    background-color: #333;
+}
+.modal-content {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: left;
+}

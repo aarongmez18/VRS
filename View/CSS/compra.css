@@ -1,0 +1,99 @@
+
+
+body {
+    background-color: #f4f4f4;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contenedor__datosCompra {
+    width: 100%;
+    max-width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor__datosCompra h2 {
+    margin-bottom: 20px;
+}
+
+.contenedor__datosCompra form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contenedor__datosCompra form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contenedor__datosCompra form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contenedor__datosProducto {
+    width: 100%;
+    max-width: 30%;
+    position: sticky;
+    top: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+/* Apartado Cards Compra */
+
+.contenedor-compra{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    font-size: small;
+}
+
+.imagen-compra{
+    width: 100px;
+    height: 120px;
+    border: #333 1px solid;
+}
+
+.titulo-compra{
+    font-size: 20px;
+}
+
+.boton__confirmar{
+    background-color: black!important;
+}
+
+.boton__confirmar:hover{
+    background-color: white!important;
+    border: 1px black solid!important;
+    color: black;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}

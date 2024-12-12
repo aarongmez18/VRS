@@ -1,0 +1,41 @@
+    /* Footer */
+    .footer__container {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    .footer__title {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .footer__section {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .footer__contact, .footer__politics, .footer__social-media {
+        flex: 1;
+    }
+    .footer__tp {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .footer__contact a, .footer__politics a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer__social-media a {
+        color: #fff;
+        margin: 0 10px;
+        font-size: 24px;
+    }
+    .footer__bottom {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    .footer__bottom p {
+        margin: 0;
+    }
+    

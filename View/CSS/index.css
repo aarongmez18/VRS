@@ -1,0 +1,117 @@
+/* Cambiaremos como actuaran las fotos dentro del carousel */
+
+.carousel-inner img {
+    max-height: 100vh;
+    object-fit: cover; 
+  }
+  
+  
+  .descuento-container{
+    background-color: black;
+    text-align: center;
+    font-size: 19px;
+    color:white;
+    padding: 10px;
+  
+  }
+  
+  .descuento-container marquee{
+    margin: 0;
+    line-height: 1.5;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+
+/* Contenedor de promoción */
+.contenedor__promocional {
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Texto promocional */
+.texto__promocional {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    line-height: 1.7;
+    padding: 30px;
+    height: 400px;
+    width: 100%;
+}
+
+.texto__promocional input{
+    padding: 10px;
+    width: 450px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border: solid 2px #4e4e4e;
+    transition: background-color 0.3s ease;
+}
+
+.texto__promocional p{
+    color: rgba(120, 120, 120, 0.697);
+    font-size: medium;
+}
+
+/* Título del texto promocional */
+.texto__promocional h2 {
+    color: black; 
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+    .contenedor__promocional {
+        padding: 20px; 
+        flex-direction: column; 
+    }
+
+    .texto__promocional {
+        padding: 20px; 
+        height: auto; 
+    }
+
+    .texto__promocional h2 {
+        font-size: 28px; 
+    }
+
+
+    .texto__promocional input{
+        width: 150px;
+
+    }
+}
+
+
+.contenedor__eslogan{
+    margin: 40px;
+    padding: 50px;
+    text-align: center;
+}
+
+.contenedor__eslogan h1{
+    color: black;
+    text-align: center;
+    font-weight: 1000;
+}
+
+.contenedor__eslogan img{
+    width: 450px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
