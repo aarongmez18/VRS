@@ -139,8 +139,7 @@
 					<p>
 						<a href="mailto:helpvrs@varosi.com">vrs@varosi.com</a>
 					</p> 
-					<!-- <p><i class="bi bi-telephone-fill"></i> +34 611 42 40 82</p> -->
-				-</div>
+				</div>
 				<div class="footer__politics">
 					<p class="footer__tp">POLICIES</p>
 					<p>
