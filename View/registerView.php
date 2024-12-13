@@ -104,7 +104,7 @@
     </div>
 
     <!-- Checkbox -->
-    <div class="form-group d-flex flex-row">
+    <div class="form-group d-flex flex-row mt-3">
         <input type="checkbox" id="terminos" name="terminos" class="form-check"/>
         <label for="terminos" class="form-label mx-3">Acepto los términos y condiciones</label>
     </div>

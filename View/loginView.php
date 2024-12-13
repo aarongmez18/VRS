@@ -59,10 +59,12 @@
 							</div>
 	 						<!-- Formulario -->
 							<form action="../Controller/validations/LoginValidation.php" method="POST">
-								<label for="nombre" class="form-label">Usuario</label>
-								<small>Introduce tu nombre de usuario</small>
-								  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu usuario">
 								<div class="form-group">
+									<label for="nombre" class="form-label">Usuario</label>
+									<small>Introduce tu nombre de usuario</small>
+								  	<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu usuario">
+								</div>
+								<div class="form-group mt-5">
 									<label for="contrasena" class="form-label">Contraseña</label>
 									<small>Introduzca la contraseña</small>
 									<input type="password" class="form-control" id="contrasena" name="contrasena" placeholder="Tu contraseña" >

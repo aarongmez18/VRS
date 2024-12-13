@@ -123,7 +123,7 @@
 
     <section class="container-fluid contenedor__eslogan">
         <h1>"Varosi: Style that redefines your presence."</h1>
-        <img src="../View/IMG/logo.png" alt="Varosies"  />
+        <img src="../View/IMG/logo.png" alt="Varosies"/>
     </section>
 
 

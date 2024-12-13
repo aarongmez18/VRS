@@ -41,6 +41,27 @@ class Producto
         return $this->precio;
     }
 
+    // Setters
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+    public function setNombre($nombre)
+    {
+        $this->nombre = $nombre;
+    }
+    public function setDescripcion($descripcion)
+    {
+        $this->descripcion = $descripcion;
+    }
+    public function setImagen($imagen)
+    {
+        $this->imagen = $imagen;
+    }
+    public function setPrecio($precio)
+    {
+        $this->precio = $precio;
+    }
 
     // Función insertar a la Base de datos
     public function insert()

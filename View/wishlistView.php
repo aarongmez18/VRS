@@ -95,7 +95,7 @@
             echo '<div class="informacion-producto">';
             echo '<h3 class="nombre-producto">Nombre del producto: '. $producto->getNombre().'</h3>';
             echo '<p class="precio-producto">Precio: '.$producto->getPrecio().'€</p>';
-            echo '<p class="descripcion-producto">Producto disponible</p>';
+            echo '<p class="descripcion-producto">Producto disponible</p><div class="botones-carrito">';
             // Boton para eliminar de la lista
             ?>
             <a id="wishlist-btn-<?php echo $producto->getId(); ?>" class="enlace" onclick="eliminar(<?php echo $userId; ?>, <?php echo $producto->getId(); ?>)">Eliminar</a>
@@ -105,7 +105,7 @@
             // Boton para ver el detalle del producto
             echo '<a class="enlace boton-detalle" href="../Controller/detalleProducto.php?id='.$idProducto.'">Ver detalle</a>';
 
-            echo '</div></div>';
+            echo '</div></div></div>';
         } 
         ?>
 

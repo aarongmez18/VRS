@@ -15,7 +15,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../View/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-    <title>Lista de deseos</title>
+    <title>Carrito - VRS</title>
 </head>
 <body>
       <!-- Barra de navegación -->
@@ -93,6 +93,8 @@
             echo '<h3 class="nombre-producto">'. $producto->getNombre().'</h3>';
             echo '<p class="descripcion-producto">Precio del producto: '.$producto->getPrecio().'€</p>';
             echo '<p class="descripcion-producto">Producto exclusivo de Varosi Urban Style.</p>';
+            echo '<div class="botones-carrito">';
+
             // Boton para eliminar del carrito
             ?>
             <a id="wishlist-btn-<?php echo $producto->getId(); ?>" class="enlace" onclick="eliminarDelCarrito(<?php echo $userId; ?>, <?php echo $producto->getId(); ?>)">Eliminar</a>
@@ -102,11 +104,10 @@
             // Boton para ver el detalle del producto y comprar
             echo '<a class="enlace" href="../Controller/detalleProducto.php?id='.$idProducto.'" class="boton-detalle">Ver detalle</a>';
             // Boton para añadir o restar cantidad al producto en el carrito
-            echo '<div class="botones-carrito">';
-            echo '<p id="precio-'.$producto->getId().'" class="descripcion-producto">Precio total: '.$producto->getPrecio() * $cantidadProductos[$producto->getId()].'€</p>'; // Asegúrate de que este elemento esté presente.
-            echo '<button id="btn-disminuir-'.$producto->getId().'" class="btn-disminuir" onclick="disminuirCarrito('.$userId.', '.$producto->getId().', '.$producto->getPrecio().')">-</button>';
+            echo '<div class="botones-accion"><button id="btn-disminuir-'.$producto->getId().'" class="btn-disminuir" onclick="disminuirCarrito('.$userId.', '.$producto->getId().', '.$producto->getPrecio().')">-</button>';
             echo '<p id="cantidad-'.$producto->getId().'">'.$cantidadProductos[$producto->getId()].'</p>';
             echo '<button id="btn-aumentar-'.$producto->getId().'" class="btn-aumentar" onclick="aumentarCarrito('.$userId.', '.$producto->getId().', '.$producto->getPrecio().')">+</button>';
+            echo '</div><p id="precio-'.$producto->getId().'" class="descripcion-producto mt-4">Precio total: '.$producto->getPrecio() * $cantidadProductos[$producto->getId()].'€</p>'; // Asegúrate de que este elemento esté presente.
             echo '</div>';            
             echo '</div></div>';
         }

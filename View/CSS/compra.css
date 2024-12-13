@@ -97,3 +97,70 @@ body {
     display: block;
     margin-top: 5px;
 }
+
+/* Responsive general */
+@media (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .contenedor__datosCompra, .contenedor__datosProducto {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .contenedor__datosCompra form input {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .contenedor__datosCompra form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .contenedor__datosProducto {
+        position: static;
+        top: auto;
+    }
+}
+
+/* Responsive para moviles */
+@media (max-width: 480px) {
+    .contenedor-compra {
+        flex-direction: column;
+        gap: 10px;
+        font-size: small;
+    }
+
+    .imagen-compra {
+        width: 80px;
+        height: 100px;
+    }
+
+    .titulo-compra {
+        font-size: 18px;
+    }
+
+    .boton__confirmar {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .botones-accion {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .btn-disminuir, .btn-aumentar {
+        width: 100%;
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+
+    .botones-accion p {
+        font-size: 14px;
+    }
+}

@@ -89,7 +89,7 @@
 
 
     .texto__promocional input{
-        width: 150px;
+        width: 250px;
 
     }
 }
@@ -99,6 +99,11 @@
     margin: 40px;
     padding: 50px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .contenedor__eslogan h1{

@@ -81,20 +81,24 @@
      <!-- Formulario Añadir Producto -->
   <div id="addProductContainer" style="display: none;">
     <h2 class="mb-3">Añadir Producto</h2>
-    <form method="POST" action="add_product.php">
+    <form method="POST" action="../Controller/actions/add_product.php" enctype="multipart/form-data">
       <div class="mb-3">
         <label for="productName" class="form-label">Nombre del Producto:</label>
-        <input type="text" id="productName" name="productName" class="form-control" required>
+        <input type="text" id="productName" name="productName" class="form-control" placeholder="Introduzca el nombre del producto" required>
       </div>
       <div class="mb-3">
-        <label for="productPrice" class="form-label">Precio:</label>
-        <input type="number" id="productPrice" name="productPrice" class="form-control" step="0.01" required>
+        <label for="productPrice" class="form-label">Precio del producto:</label>
+        <input type="number" id="productPrice" name="productPrice" class="form-control" step="0.01" placeholder="Introduzca el precio del producto" required min="0">
       </div>
       <div class="mb-3">
-        <label for="productQuantity" class="form-label">Cantidad:</label>
-        <input type="number" id="productQuantity" name="productQuantity" class="form-control" required>
+        <label for="productDescription" class="form-label">Descripción del producto:</label>
+        <input type="text" id="productDescription" name="productDescription" class="form-control" placeholder="Introduzca la descripción del producto" required>
       </div>
-      <button type="submit" class="btn btn-primary">Añadir Producto</button>
+      <div class="mb-3">
+        <label for="productImage" class="form-label">Imagen del producto:</label>
+        <input type="file" id="productImage" name="productImage" class="form-control" accept=".jpg, .jpeg, .png"  required>
+      </div>
+      <button type="submit" >Añadir Producto</button>
     </form>
   </div>
   </div>

@@ -1,11 +1,10 @@
 <?php
 abstract class VarosiDB
 {
-    private static $server = 'localhost';
-    private static $db = 'varosi';
-    private static $user = 'root';
-    private static $password = '';
-
+    private static $server = "localhost"; // Nombre del host
+    private static $db = "varosi";        // Nombre de la base de datos
+    private static $user = "root";            // Usuario MySQL
+    private static $password = "";  
     // Conexión a la base de datos
     public static function connectDB()
     {

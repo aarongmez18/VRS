@@ -10,6 +10,7 @@
     background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro para contraste */
     width: 100%;
     box-sizing: border-box;
+    overflow:hidden;
 }
 
 /* Fondo de pantalla completo en login */
@@ -84,7 +85,6 @@ form input[type="password"]::placeholder{
 /* Casillas de Verificación */
 form input[type="checkbox"] {
     accent-color: #28a745;
-    border-radius: 50%;
 }
 
 /* Botón de Enviar */
@@ -153,7 +153,7 @@ form input[type="submit"] {
     .formulario__container {
         width: 90%;
         padding: 10px;
-        min-height: 200vh;
+        min-height: 90vh;
     }
 
     /* Título */
@@ -193,6 +193,10 @@ form input[type="submit"] {
 
 /* Ajustes para pantallas pequeñas (móviles) */
 @media (max-width: 480px) {
+
+    *{
+        text-align: center;
+    }
     /* Contenedor principal */
     .formulario__container {
         width: 100%;
@@ -226,5 +230,9 @@ form input[type="submit"] {
     .error-message {
         font-size: 0.8rem;
         padding: 6px;
+    }
+    
+    .form-label{
+        font-size: 0.9rem;
     }
 }
