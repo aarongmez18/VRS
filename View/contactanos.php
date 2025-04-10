@@ -60,7 +60,10 @@
 
                 </div>
 
-				<div class="formulario__contact">
+                <div class="contact__container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.141895495548!2d-5.776298199999986!3d37.1730987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd127f741ecc5b79%3A0xc4314da8d6b5d2ad!2sC.%20M%C3%BAsico%20Jos%C3%A9%20Salazar%20Rodriguez%2C%2041710%20Utrera%2C%20Sevilla!5e0!3m2!1ses!2ses!4v1728340645409!5m2!1ses!2ses" width="600" height="450" class="mapa__contact" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div class="formulario__contact">
                         <h2 class="h2">DATOS</h2>
                         <small>Ingresa tus datos para contactar con usted</small>
                         <form action="animationContact.php" method="POST">
@@ -70,6 +73,8 @@
                             <input type="submit"></input>
                         </form>
                     </div>
+
+                </div>
 
 
             </section>
