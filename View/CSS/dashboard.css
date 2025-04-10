@@ -1,0 +1,227 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    color: #333;
+    overflow: auto;
+}
+
+/* Contenedor principal */
+.container-fluid {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Título */
+h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    background: #ffffff;
+    border: 2px solid #000;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-top: -2px;
+    overflow: auto;
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Botones de pestañas */
+.tab-btn {
+    flex: 1;
+    width: 150px;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #fff;
+    font-size: 1rem;
+    color: #000;
+    border: 2px solid #000;
+    border-bottom: none;
+    border-radius: 8px 8px 0 0;
+}
+
+.tab-btn.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.tab-btn:not(.active):hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Tabla */
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.table-bordered th,
+.table-bordered td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: #f9fafb;
+}
+
+.table-dark th {
+    background-color: #000;
+    color: white;
+}
+
+/* Botón de descarga */
+.download-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Gráficos */
+#ventasChart {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+/* Alternativa entre vista gráfica y tabla */
+#chartContainer, #tableContainer {
+    display: none;
+}
+
+/* Media query para Ordenadores */
+@media (max-width: 1024px) {
+    .dashboard-container {
+        padding: 25px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .tab-btn {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    .download-btn {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media query para tablets */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 20px;
+        width: 90%;
+        margin-top: 50px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .table th, .table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    #ventasChart {
+        height: 250px;
+    }
+
+    .tab-btn {
+        font-size: 0.9rem;
+        padding: 8px 12px;
+    }
+}
+
+/* Media query para móviles */
+@media (max-width: 480px) {
+    .dashboard-container {
+        padding: 15px;
+        width: 95%;
+        margin-top: 20px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .tab-btn {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    button {
+        font-size: 0.8rem;
+    }
+
+    .table th, .table td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .download-btn {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    #ventasChart {
+        height: 200px;
+    }
+
+    .table {
+        font-size: 0.8rem;
+    }
+}

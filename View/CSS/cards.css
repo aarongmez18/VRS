@@ -1,0 +1,176 @@
+/* Contenedor de las cards */
+.contenedor__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    gap: 20px;
+    margin: 0 auto; 
+    padding: 20px;
+    width: 100%; 
+    max-width: 1200px; 
+    box-sizing: border-box; 
+}
+
+/* Estilo de las tarjetas de producto */
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    border: #555 1px solid;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen del producto */
+.product-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Información del producto */
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-align: end;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: end;
+}
+
+/* Botón de "Añadir al carrito" */
+.add-to-cart-btn {
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    color: #918d83;
+}
+
+/* Estilos para el filtro */
+.filter-group {
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+}
+
+.filter-group select {
+    appearance: none;
+    padding: 10px;
+    border: transparent;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+@media (max-width: 1124px) {
+    .contenedor__cards {
+        grid-template-columns: 2fr;
+        margin: 10px auto;
+        gap: 15px;
+        justify-items: center;
+    }
+}
+
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor__cards {
+        grid-template-columns: 1fr;
+        margin: 10px auto;
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+
+    .product-info {
+        padding: 15px;
+    }
+
+    .product-name {
+        font-size: 1.2rem;
+    }
+
+    .product-price {
+        font-size: 1rem;
+    }
+
+    .add-to-cart-btn {
+        font-size: 1.2rem;
+        padding: 8px 12px;
+    }
+
+    .custom-alert {
+        font-size: small;
+    }
+
+    .filter-group {
+        gap: 8px;
+    }
+
+    .filter-group label {
+        font-size: 16px;
+    }
+
+    .filter-group select {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Títulos antes de entrar en el contenedor de las cartas */
+.enlaces-cards {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.enlaces-cards p {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+    font-weight: 800;
+}
+
+.enlaces-cards a {
+    color: black;
+    font-weight: 800;
+}
+
+.enlaces-cards a:hover {
+    color: #918d83;
+}
+

@@ -1,0 +1,26 @@
+Reporte de Ventas
+VENTAS DE PRODUCTOS TOTALES
+----------------------------------------
+ID | Fecha de Compra | Cantidad | Precio
+----------------------------------------
+82 | 2024-10-25 | 5 | 51 € 
+83 | 2024-09-25 | 1 | 62 € 
+84 | 2024-11-25 | 2 | 21 € 
+85 | 2024-11-12 | 1 | 45 € 
+86 | 2024-11-25 | 1 | 31 € 
+87 | 2024-12-02 | 1 | 31 € 
+----------------------------------------
+Total de ventas: 6
+Total en euros: 241 € 
+Total en dólares: 277.15 $ 
+Total en bitcoins: 0.00401988 BTC 
+----------------------------------------
+Este documento contiene los detalles de las ventas realizadas en la web.
+Puede consultarlo en la administración del sitio web.
+Este documento también puede ser exportado como un archivo PDF.
+Si desea obtener más información sobre nuestro sitio web, puede visitar nuestra página web.
+Si desea contactar con nosotros, puede escribirnos a nuestra dirección de correo electrónico:  contacto@urbanstyle.com.
+Si desea realizar algún cambio o consulta, no dude en contactar con nosotros.
+Gracias por su preferencia!
+----------------------------------------
+Városi Urban Style copyright
