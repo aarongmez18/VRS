@@ -125,7 +125,7 @@
                  							}else{
 								 ?>
                                  <div class="texto__container">
-                                     <h1>HOLA, <?php echo strtoupper($_SESSION['nombreUsuario']);?></h1>
+                                     <h1>HOLA, <?php echo $_SESSION['nombreUsuario'];?></h1>
                                      <p>Estás en tu cuenta. Puedes acceder a tus pedidos y ver tus datos personales.</p>
                                      <p>Si deseas cerrar sesión pulsa <a href="../Controller/cerrar__sesion.php">aquí</a></p>
                                  </div>

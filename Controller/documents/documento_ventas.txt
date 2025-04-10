@@ -1,5 +1,6 @@
 Reporte de Ventas
-VENTAS DE PRODUCTOS TOTALES----------------------------------------
+VENTAS DE PRODUCTOS TOTALES
+----------------------------------------
 ID | Fecha de Compra | Cantidad | Precio
 ----------------------------------------
 82 | 2024-10-25 | 5 | 51 € 
@@ -7,11 +8,12 @@ ID | Fecha de Compra | Cantidad | Precio
 84 | 2024-11-25 | 2 | 21 € 
 85 | 2024-11-12 | 1 | 45 € 
 86 | 2024-11-25 | 1 | 31 € 
+87 | 2024-12-02 | 1 | 31 € 
 ----------------------------------------
-Total de ventas: 5
-Total en euros: 210 € 
-Total en dólares: 241.5 $ 
-Total en bitcoins: 0.0035028 BTC 
+Total de ventas: 6
+Total en euros: 241 € 
+Total en dólares: 277.15 $ 
+Total en bitcoins: 0.00401988 BTC 
 ----------------------------------------
 Este documento contiene los detalles de las ventas realizadas en la web.
 Puede consultarlo en la administración del sitio web.
